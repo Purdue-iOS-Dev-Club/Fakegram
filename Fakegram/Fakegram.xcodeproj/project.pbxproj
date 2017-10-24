@@ -12,9 +12,14 @@
 		C78293EA1F901668004730B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C78293E81F901668004730B1 /* Main.storyboard */; };
 		C78293EC1F901668004730B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C78293EB1F901668004730B1 /* Assets.xcassets */; };
 		C78293EF1F901668004730B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C78293ED1F901668004730B1 /* LaunchScreen.storyboard */; };
+		C78293F71F901A39004730B1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C78293F61F901A2F004730B1 /* GoogleService-Info.plist */; };
+		F18840283F6CE98BB43E697D /* Pods_Fakegram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1910C68A083CE3063660F325 /* Pods_Fakegram.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1910C68A083CE3063660F325 /* Pods_Fakegram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fakegram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		549EE5B975AA6F549D45BBDA /* Pods-Fakegram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fakegram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fakegram/Pods-Fakegram.debug.xcconfig"; sourceTree = "<group>"; };
+		AA7452889464C1AE31E05866 /* Pods-Fakegram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fakegram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fakegram/Pods-Fakegram.release.xcconfig"; sourceTree = "<group>"; };
 		C78293E11F901668004730B1 /* Fakegram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fakegram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C78293E41F901668004730B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C78293E61F901668004730B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		C78293EB1F901668004730B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C78293EE1F901668004730B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C78293F01F901668004730B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C78293F61F901A2F004730B1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F18840283F6CE98BB43E697D /* Pods_Fakegram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04C7962D4C74DE954C2986B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1910C68A083CE3063660F325 /* Pods_Fakegram.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7825DAE0E5A8A915B4194356 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				549EE5B975AA6F549D45BBDA /* Pods-Fakegram.debug.xcconfig */,
+				AA7452889464C1AE31E05866 /* Pods-Fakegram.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C78293D81F901668004730B1 = {
 			isa = PBXGroup;
 			children = (
 				C78293E31F901668004730B1 /* Fakegram */,
 				C78293E21F901668004730B1 /* Products */,
+				7825DAE0E5A8A915B4194356 /* Pods */,
+				04C7962D4C74DE954C2986B6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +82,7 @@
 			children = (
 				C78293E41F901668004730B1 /* AppDelegate.swift */,
 				C78293E61F901668004730B1 /* ViewController.swift */,
+				C78293F61F901A2F004730B1 /* GoogleService-Info.plist */,
 				C78293E81F901668004730B1 /* Main.storyboard */,
 				C78293EB1F901668004730B1 /* Assets.xcassets */,
 				C78293ED1F901668004730B1 /* LaunchScreen.storyboard */,
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C78293F31F901668004730B1 /* Build configuration list for PBXNativeTarget "Fakegram" */;
 			buildPhases = (
+				80EEAFE30014064E0F888829 /* [CP] Check Pods Manifest.lock */,
 				C78293DD1F901668004730B1 /* Sources */,
 				C78293DE1F901668004730B1 /* Frameworks */,
 				C78293DF1F901668004730B1 /* Resources */,
+				835596F3C350CC82C1178D4E /* [CP] Embed Pods Frameworks */,
+				68E9EF9DEB02EEDC848BDC87 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,11 +155,84 @@
 			files = (
 				C78293EF1F901668004730B1 /* LaunchScreen.storyboard in Resources */,
 				C78293EC1F901668004730B1 /* Assets.xcassets in Resources */,
+				C78293F71F901A39004730B1 /* GoogleService-Info.plist in Resources */,
 				C78293EA1F901668004730B1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		68E9EF9DEB02EEDC848BDC87 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fakegram/Pods-Fakegram-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80EEAFE30014064E0F888829 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fakegram-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		835596F3C350CC82C1178D4E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Fakegram/Pods-Fakegram-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fakegram/Pods-Fakegram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C78293DD1F901668004730B1 /* Sources */ = {
@@ -272,6 +375,7 @@
 		};
 		C78293F41F901668004730B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 549EE5B975AA6F549D45BBDA /* Pods-Fakegram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +391,7 @@
 		};
 		C78293F51F901668004730B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA7452889464C1AE31E05866 /* Pods-Fakegram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
