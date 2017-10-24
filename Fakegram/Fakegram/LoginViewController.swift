@@ -35,6 +35,8 @@ class LoginViewController: UIViewController {
                 print(error.localizedDescription)
             } else if let user = user {
                 print("Yay we logged in!" + user.email!)
+                
+                self.performSegue(withIdentifier: "loginSegue", sender: nil)
             }
         }
     }
