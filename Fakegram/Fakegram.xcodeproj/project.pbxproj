@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C7156D8D1F9FE8DD00F67F15 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7156D8C1F9FE8DD00F67F15 /* RegisterViewController.swift */; };
+		C77CF0A91F9FE447001C78AD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77CF0A81F9FE447001C78AD /* LoginViewController.swift */; };
+		C77CF0AA1F9FE4D6001C78AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C78293E81F901668004730B1 /* Main.storyboard */; };
 		C78293E51F901668004730B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78293E41F901668004730B1 /* AppDelegate.swift */; };
-		C78293E71F901668004730B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78293E61F901668004730B1 /* ViewController.swift */; };
-		C78293EA1F901668004730B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C78293E81F901668004730B1 /* Main.storyboard */; };
 		C78293EC1F901668004730B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C78293EB1F901668004730B1 /* Assets.xcassets */; };
 		C78293EF1F901668004730B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C78293ED1F901668004730B1 /* LaunchScreen.storyboard */; };
 		C78293F71F901A39004730B1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C78293F61F901A2F004730B1 /* GoogleService-Info.plist */; };
@@ -20,9 +21,10 @@
 		1910C68A083CE3063660F325 /* Pods_Fakegram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fakegram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		549EE5B975AA6F549D45BBDA /* Pods-Fakegram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fakegram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fakegram/Pods-Fakegram.debug.xcconfig"; sourceTree = "<group>"; };
 		AA7452889464C1AE31E05866 /* Pods-Fakegram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fakegram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fakegram/Pods-Fakegram.release.xcconfig"; sourceTree = "<group>"; };
+		C7156D8C1F9FE8DD00F67F15 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		C77CF0A81F9FE447001C78AD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C78293E11F901668004730B1 /* Fakegram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fakegram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C78293E41F901668004730B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C78293E61F901668004730B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C78293E91F901668004730B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C78293EB1F901668004730B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C78293EE1F901668004730B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -81,12 +83,13 @@
 			isa = PBXGroup;
 			children = (
 				C78293E41F901668004730B1 /* AppDelegate.swift */,
-				C78293E61F901668004730B1 /* ViewController.swift */,
 				C78293F61F901A2F004730B1 /* GoogleService-Info.plist */,
 				C78293E81F901668004730B1 /* Main.storyboard */,
 				C78293EB1F901668004730B1 /* Assets.xcassets */,
 				C78293ED1F901668004730B1 /* LaunchScreen.storyboard */,
 				C78293F01F901668004730B1 /* Info.plist */,
+				C77CF0A81F9FE447001C78AD /* LoginViewController.swift */,
+				C7156D8C1F9FE8DD00F67F15 /* RegisterViewController.swift */,
 			);
 			path = Fakegram;
 			sourceTree = "<group>";
@@ -156,7 +159,7 @@
 				C78293EF1F901668004730B1 /* LaunchScreen.storyboard in Resources */,
 				C78293EC1F901668004730B1 /* Assets.xcassets in Resources */,
 				C78293F71F901A39004730B1 /* GoogleService-Info.plist in Resources */,
-				C78293EA1F901668004730B1 /* Main.storyboard in Resources */,
+				C77CF0AA1F9FE4D6001C78AD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,7 +242,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C78293E71F901668004730B1 /* ViewController.swift in Sources */,
+				C7156D8D1F9FE8DD00F67F15 /* RegisterViewController.swift in Sources */,
+				C77CF0A91F9FE447001C78AD /* LoginViewController.swift in Sources */,
 				C78293E51F901668004730B1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
